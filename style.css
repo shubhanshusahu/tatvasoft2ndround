@@ -1,3 +1,7 @@
 .nav{
    float:left
 }
+p{
+    width: 50%;
+    background-color: aquamarine;
+}
