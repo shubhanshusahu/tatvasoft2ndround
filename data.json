@@ -1,0 +1,24 @@
+[{
+    "FirstName":"shubhanshu",
+    "LastName":"sahu",
+    "Email":"shubh1@gmail.com",
+    "Password":"123",
+    "Dob": "13/02/1999",
+    "Role":"Admin"
+},
+{
+    "FirstName":"shubhanshu",
+    "LastName":"sahu",
+    "Email":"shubh2@gmail.com",
+    "Password":"123",
+    "Dob": "13/02/1999",
+    "Role":"Admin"
+},
+{
+    "FirstName":"shubhanshu",
+    "LastName":"sahu",
+    "Email":"shubh3@gmail.com",
+    "Password":"123",
+    "Dob": "13/02/1999",
+    "Role":"Admin"
+}]

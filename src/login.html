@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link type="stylesheet" href="../style.css"/>
+    <title>
+        demo app
+    </title>
+    <script>
+data=[{
+    "FirstName":"shubhanshu",
+    "LastName":"sahu",
+    "Email":"shubh1@gmail.com",
+    "Password":"123",
+    "Dob": "13/02/1999",
+    "Role":"Admin"
+},
+{
+    "FirstName":"shiva",
+    "LastName":"sahu",
+    "Email":"shubh2@gmail.com",
+    "Password":"123",
+    "Dob": "13/02/2000",
+    "Role":"User"
+},
+{
+    "FirstName":"rahul",
+    "LastName":"sahu",
+    "Email":"shubh3@gmail.com",
+    "Password":"123",
+    "Dob": "13/02/2002",
+    "Role":"User"
+}]
+var user='shbuhanshu';
+
+var pass='sdfs';
+function show(){
+    alert(document.getElementById('user').value)
+    user=(document.getElementById('user').value)
+    alert("user"+user)
+}
+function login(){
+    user=(document.getElementById('user').value)
+    pass=(document.getElementById('pass').value)
+    var flag=0;
+   for(let i=0;i<data.length;i++){
+         if(data[i].Email==user && data[i].Password==pass)
+         {
+           
+                alert('success')
+                window.location('./blogs.html')
+                flag=1;
+         }
+            
+         
+    }
+    if (flag!=1){
+        alert("user or pass wrong!")
+        location.assign("http://google.com")
+        navigator.location('file:///C:/Menarini%20madagascar/learn%20angular/tatvasoft2/src/blogs.html')
+        // alert(location)
+    }
+}
+
+        </script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="nav"><a href="./login.html">login</a></li>
+                <li class="nav"><a href="./signup.html">signup</a></li>
+                <li class="nav"><a href="./blogs.html">Blogs</a></li>
+            </ul>
+            </nav>
+     login
+     <form>
+<input type="text" id="user" name="username" value="" placeholder="type username here">
+
+<input type="text" id="pass" name="password" value="" placeholder="type password here">
+<button onclick="login()">login</button>
+     </form>
+    </body>
+</html>
