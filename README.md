@@ -1,2 +1,2 @@
 # tatvasoft2ndround
-crud application using vanilla javascript
+# data is inside master branch
